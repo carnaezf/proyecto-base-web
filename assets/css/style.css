@@ -51,10 +51,49 @@ nav ul li{
     background: green; /* Color de fondo del contenido principal */
 }
 
+
+/* Estilos básicos para los artículos */
+.article {
+    background: white;          /* Fondo blanco para diferenciar del content */
+    border: 1px solid #ccc;     /* Borde gris claro */
+    padding: 10px;              /* Espaciado interno */
+    margin: 10px;               /* Espaciado externo entre artículos */
+}
+
+/* Título de los artículos */
+.article h2 {
+    font-size: 18px;            /* Tamaño de letra del título */
+    color: black;               /* Color negro para el título */
+    margin-bottom: 5px;         /* Espacio debajo del título */
+}
+
+/* Texto del artículo */
+.article p {
+    font-size: 14px;            /* Tamaño de letra del texto */
+    color: #333;                /* Gris oscuro */
+    line-height: 1.4;           /* Espaciado entre líneas */
+}
+
+/* Imagen dentro de los artículos */
+.article img {
+    max-width: 100%;            /* La imagen no se pasa del ancho del artículo */
+    height: auto;               /* Mantiene proporciones */
+    margin-top: 5px;            /* Espacio encima de la imagen */
+}
+
+
+img {
+  max-width: 100%; /* nunca más grande que el contenedor */
+  height: auto;    /* mantiene proporciones */
+  display: block;  /* elimina espacios extra */
+  margin: 0 auto;  /* centra la imagen */
+}
+
+
 aside{
     float: left; /* Alinea la barra lateral hacia la izquierda */
     width: 20%; /* Ancho de la barra lateral */
-    min-height: 500px; /* Altura mínima de la barra lateral */
+    min-height: 865px; /* Altura mínima de la barra lateral */
     background: orange; /* Color de fondo de la barra lateral */
 }
 
