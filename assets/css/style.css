@@ -1,0 +1,67 @@
+/* Con "*" podemos poner una regla general a todos los elementos */
+*{
+    margin: 0px; /* Elimina los márgenes externos de todos los elementos */
+    padding: 0px; /* Elimina los rellenos internos de todos los elementos */
+}
+
+body{
+    background: lightgray; /* Establece el color de fondo del cuerpo del documento */
+    font-family: Arial, Helvetica, sans-serif; /* Define la familia de fuentes para el texto */
+}
+
+#container{
+    width: 1100px; /* Ancho del contenedor principal */
+    margin: 0px auto; /* Centra el contenedor en la página */
+    border: 1px solid black; /* Borde alrededor del contenedor */
+}
+
+header{
+    background: red; /* Color de fondo para el encabezado */
+    height: 100px; /* Altura del encabezado */
+    width: 100%; /* El encabezado ocupa el 100% del ancho de su contenedor */
+    margin: 0; /* Elimina cualquier margen externo del encabezado */
+    text-align: center; /* Alinea el texto al centro */
+    line-height: 100px; /* Alinea verticalmente el texto en el encabezado */
+    color: white; /* Color del texto en el encabezado */
+    border-bottom: 3px dashed black; /* Borde inferior del encabezado */
+}
+
+nav{
+    background: lightblue; /* Color de fondo para la barra de navegación */
+    height: 50px; /* Altura de la barra de navegación */
+    border: 1px solid black; /* Borde alrededor de la barra de navegación */
+}
+
+nav ul li{
+    float: left; /* Alinea los elementos de la lista hacia la izquierda */
+    list-style: none; /* Elimina los estilos de lista predeterminados */
+    margin: 10px; /* Margen alrededor de cada elemento de la lista */
+    line-height: 30px; /* Altura de la línea para elementos de la lista */
+}
+
+/* Soluciona problemas de diseño causados por elementos flotantes */
+.clearfix{
+    clear: both; /* Evita que elementos flotantes interfieran con los elementos a su alrededor */
+}
+
+#content{
+    float: left; /* Alinea el contenido principal hacia la izquierda */
+    width: 80%; /* Ancho del contenido principal */
+    min-height: 500px; /* Altura mínima del contenido principal */
+    background: green; /* Color de fondo del contenido principal */
+}
+
+aside{
+    float: left; /* Alinea la barra lateral hacia la izquierda */
+    width: 20%; /* Ancho de la barra lateral */
+    min-height: 500px; /* Altura mínima de la barra lateral */
+    background: orange; /* Color de fondo de la barra lateral */
+}
+
+footer{
+    background: black; /* Color de fondo del pie de página */
+    color: white; /* Color del texto en el pie de página */
+    text-align: center; /* Alinea el texto al centro en el pie de página */
+    height: 50px; /* Altura del pie de página */
+    line-height: 50px; /* Alinea verticalmente el texto en el pie de página */
+}

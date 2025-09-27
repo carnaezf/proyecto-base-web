@@ -1,0 +1,71 @@
+<!DOCTYPE html> <!-- Indica que este documento sigue el estándar HTML5 -->
+<html lang="es"> <!-- Define el idioma del documento como español -->
+<head>
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres del documento a UTF-8 -->
+    <title>Mi sitio</title> <!-- Título de la página, que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="./assets/css/style.css"> <!-- Vincula un archivo CSS externo para estilizar la página -->
+</head>
+<body>
+    <div id="container"> <!-- Contenedor principal para todos los elementos de la página -->
+        <header>
+            <h1>Mi sitio web</h1> <!-- Encabezado principal de la página -->
+        </header>
+
+        <!-- El siguiente header está comentado. Si lo descomentas, tendrá el mismo estilo que el primero, porque comparten la misma etiqueta y estilos asociados en el CSS -->
+        <!-- <header>
+            <h1>Aprendiendo CSS</h1>
+        </header> -->
+
+        <nav> <!-- Navegación principal de la página -->
+            <ul> <!-- Lista no ordenada para los enlaces de navegación -->
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Pagina 1</a></li>
+                <li><a href="#">Pagina 2</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- Este div se utiliza para solucionar problemas de diseño, como el desbordamiento de flotación. Sin el CSS, es difícil explicar su efecto específico. -->
+        <div class="clearfix"></div>
+
+        <section id="content"> <!-- Sección principal del contenido -->
+            <!-- Artículos o entradas individuales -->
+            <article class='article'>
+                <h2>Titulo del Articulo</h2>
+                <p>Texto del Articulo</p>
+            </article>
+
+            <article class='article'>
+                <h2>Titulo del Articulo</h2>
+                <p>Texto del Articulo</p>
+            </article>
+
+            <article class='article'>
+                <h2>Titulo del Articulo</h2>
+                <p>Texto del Articulo</p>
+            </article>
+
+            <article class='article'>
+                <h2>Titulo del Articulo</h2>
+                <p>Texto del Articulo</p>
+            </article>
+        </section>
+
+        <aside> <!-- Contenido secundario o barra lateral -->
+            <h2>Barra Lateral</h2>
+            <form> <!-- Formulario de ejemplo -->
+                <input type="text"><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </aside>
+
+        <div class="clearfix"></div> <!-- Otro clearfix para evitar problemas de diseño antes del pie de página -->
+
+        <footer> <!-- Pie de página de la web -->
+            Nuestra pagina web &copy; 2025
+        </footer>
+
+    </div>
+</body>
+</html>

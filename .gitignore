@@ -1,0 +1,14 @@
+# Archivos temporales
+*.log
+*.tmp
+*.bak
+
+# Configuración del sistema operativo
+.DS_Store
+Thumbs.db
+
+
+
+.vscode/
+
+GEMINI.md
