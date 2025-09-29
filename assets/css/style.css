@@ -44,6 +44,21 @@ nav ul li{
     clear: both; /* Evita que elementos flotantes interfieran con los elementos a su alrededor */
 }
 
+/* Estilos para el contenedor de los botones */
+.contenedor-botones {
+  background-color: #f5f5f5;   /* Fondo gris claro */
+  border: 2px dashed #333;     /* Borde punteado */
+  padding: 15px;               /* Espacio interno */
+  margin-top: 10px; 
+  margin-bottom: 10px;          
+  width: fit-content;          /* Se ajusta al contenido */
+  text-align: center;          /* Centra los botones dentro */
+  border-radius: 8px;          /* Esquinas redondeadas */
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2); /* Sombrita ligera */
+}
+
+
+
 #content{
     float: left; /* Alinea el contenido principal hacia la izquierda */
     width: 80%; /* Ancho del contenido principal */
@@ -93,7 +108,7 @@ img {
 aside{
     float: left; /* Alinea la barra lateral hacia la izquierda */
     width: 20%; /* Ancho de la barra lateral */
-    min-height: 865px; /* Altura mínima de la barra lateral */
+    min-height: 1229px; /* Altura mínima de la barra lateral */
     background: orange; /* Color de fondo de la barra lateral */
 }
 

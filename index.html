@@ -4,20 +4,13 @@
 <head>
     <meta charset="UTF-8"> <!-- Establece la codificación de caracteres del documento a UTF-8 -->
     <title>Mi sitio</title> <!-- Título de la página, que aparece en la pestaña del navegador -->
-    <link rel="stylesheet" href="./assets/css/style.css"> <!-- Vincula un archivo CSS externo para estilizar la página -->
-    
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Vincula un archivo CSS externo para estilizar la página -->
+
 </head>
 
 <body>
     <div id="container"> <!-- Contenedor principal para todos los elementos de la página -->
-        <header>
-            <h1>Mi sitio web</h1> <!-- Encabezado principal de la página -->
-        </header>
-
-        <!-- El siguiente header está comentado. Si lo descomentas, tendrá el mismo estilo que el primero, porque comparten la misma etiqueta y estilos asociados en el CSS -->
-        <!-- <header>
-            <h1>Aprendiendo CSS</h1>
-        </header> -->
 
         <nav> <!-- Navegación principal de la página -->
             <ul> <!-- Lista no ordenada para los enlaces de navegación -->
@@ -28,6 +21,24 @@
                 <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
+
+        <header>
+            <h1>Mi sitio web</h1> <!-- Encabezado principal de la página -->
+        </header>
+
+        <div class="contenedor-botones">
+            <button onclick="saludo()">Saludo</button>
+            <button onclick="mensajeColor()">Mensaje Colorido</button>
+            <button onclick="contador()">Iniciar Contador</button>
+            <button onclick="lluviaEmojis()">Lluvia de Emojis</button>
+        </div>
+
+
+
+        <!-- El siguiente header está comentado. Si lo descomentas, tendrá el mismo estilo que el primero, porque comparten la misma etiqueta y estilos asociados en el CSS -->
+        <!-- <header>
+            <h1>Aprendiendo CSS</h1>
+        </header> -->
 
         <!-- Este div se utiliza para solucionar problemas de diseño, como el desbordamiento de flotación. Sin el CSS, es difícil explicar su efecto específico. -->
         <div class="clearfix"></div>
@@ -51,6 +62,23 @@
                 <p>Texto del Articulo</p>
                 <img src="./assets/img/libros.jpg" alt="Descripción de la imagen">
             </article>
+
+
+            <!-- https://ninjas.cl/blog/chilean-birds/ -->
+            <!-- https://aves.ninjas.cl/api/birds -->
+            <article class='article'>
+                <h2>Imagen de ave</h2>
+                <p>Imagen tomada desde la api chilean_birds https://ninjas.cl/blog/chilean-birds/ </p>
+                <img src="https://aves.ninjas.cl/api/site/assets/files/3099/17082018024245aguilucho_chico_tomas_rivas_web.200x0.jpg"
+                    alt="Descripción de la imagen">
+            </article>
+
+            <article class='article'>
+                <h2>Titulo del Articulo</h2>
+                <p>Texto del Articulo</p>
+                <img src="./assets/img/imagen_inexistente.jpg" alt="Descripción de la imagen">
+            </article>
+
         </section>
 
         <aside> <!-- Contenido secundario o barra lateral -->
@@ -68,6 +96,8 @@
         </footer>
 
     </div>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
