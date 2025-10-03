@@ -40,3 +40,16 @@ function lluviaEmojis() {
     console.log(emojis[random]);
   }
 }
+
+
+function cambiarColorHeader() {
+  const header = document.querySelector("header"); 
+  const colores = ["lightblue", "lightgreen", "lightpink", "orange", "yellow", "lavender"];
+  const colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
+
+  header.style.backgroundColor = colorAleatorio;
+}
+
+
+
+
