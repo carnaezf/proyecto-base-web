@@ -119,3 +119,31 @@ footer{
     height: 50px; /* Altura del pie de página */
     line-height: 50px; /* Alinea verticalmente el texto en el pie de página */
 }
+
+
+/* Paginas */
+/* Secciones */
+.seccion {
+  margin-bottom: 2rem;
+  padding: 1rem 1.5rem;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+/* Colores distintivos por tipo */
+.definicion { border-left: 6px solid #6a5acd; }
+.ejemplos { border-left: 6px solid #009688; }
+.seccion-final { border-left: 6px solid #ffa726; background: #fffaf0; }
+
+/* Enlaces por tipo */
+.enlace-interno { color: #1a73e8; }
+.enlace-externo { color: #00796b; }
+.enlace-correo { color: #e91e63; }
+.enlace-telefono { color: #009688; }
+.enlace-ancla { color: #ff9800; }
+
+/* Elementos de texto */
+.titulo-seccion { font-size: 1.5rem; margin-bottom: 0.5rem; }
+.subtitulo { font-size: 1.2rem; color: #555; margin-top: 1rem; }
+.texto { font-size: 1rem; line-height: 1.6; }
+.codigo-ejemplo { background: #2d2d2d; color: #00ff99; padding: 1rem; border-radius: 8px; }

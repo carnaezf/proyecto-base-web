@@ -1,0 +1,97 @@
+<!DOCTYPE html> <!-- Indica que este documento sigue el estándar HTML5 -->
+<html lang="es"> <!-- Define el idioma del documento como español -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres del documento a UTF-8 -->
+    <title>Vínculos e Hipervínculos</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="./assets/css/style.css"> <!-- Vincula un CSS externo -->
+</head>
+
+<body>
+    <div id="container"> <!-- Contenedor principal -->
+
+        <nav> <!-- Menú de navegación -->
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pagina1.html">Página 1</a></li>
+                <li><a href="#">Página 2</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <header>
+            <h1>Clase: Vínculos e Hipervínculos en HTML</h1>
+        </header>
+
+        <main>
+            <section class="seccion definicion">
+                <h2 class="titulo-seccion">1 ¿Qué es un hipervínculo?</h2>
+                <p class="texto">
+                    Un <strong>hipervínculo</strong> o <strong>enlace</strong> permite conectar una página web con otra,
+                    un documento, una imagen, un correo electrónico o incluso una parte específica de la misma página.
+                    En HTML se crea con la etiqueta <code>&lt;a&gt;</code>.
+                </p>
+                <p class="texto">Su estructura básica es:</p>
+                <pre class="codigo-ejemplo">
+    <code>&lt;a href="destino.html"&gt;Texto del enlace&lt;/a&gt;</code>
+  </pre>
+            </section>
+
+            <hr class="divisor">
+
+            <section class="seccion ejemplos">
+                <h2 class="titulo-seccion">2 Ejemplos prácticos</h2>
+
+                <h3 class="subtitulo">a) Enlace interno (dentro del mismo sitio)</h3>
+                <p class="texto">
+                    <a href="pagina1.html" class="enlace enlace-interno">Ir a Página 1</a>
+                </p>
+
+                <h3 class="subtitulo">b) Enlace externo (a otro sitio web)</h3>
+                <p class="texto">
+                    <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/a" target="_blank" rel="noopener"
+                        class="enlace enlace-externo">
+                        Ver documentación oficial de &lt;a&gt; en MDN
+                    </a>
+                </p>
+
+                <h3 class="subtitulo">c) Enlace a correo electrónico</h3>
+                <p class="texto">
+                    <a href="mailto:contacto@ejemplo.com" class="enlace enlace-correo">
+                        Enviar correo a contacto@ejemplo.com
+                    </a>
+                </p>
+
+
+                <h3 class="subtitulo">e) Enlace con ancla (dentro de la misma página)</h3>
+                <p class="texto">
+                    <a href="#seccion-final" class="enlace enlace-ancla">
+                        Ir al final de la página
+                    </a>
+                </p>
+            </section>
+
+            <hr class="divisor">
+
+            <section id="seccion-final" class="seccion seccion-final">
+                <h2 class="titulo-seccion">3 Sección final (destino del ancla)</h2>
+                <p class="texto">
+                    Has llegado al final de la página gracias a un enlace con ancla.
+                    Este tipo de vínculo utiliza el atributo <code>id</code> para moverse dentro de la misma página.
+                </p>
+
+                <p class="texto">
+                    <a href="#top" class="enlace enlace-ancla">Volver arriba</a>
+                </p>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Nuestra página web &copy; 2025</p>
+        </footer>
+    </div>
+</body>
+
+</html>
